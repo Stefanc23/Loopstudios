@@ -21,11 +21,19 @@ body {
   font-size: $small;
 }
 
-h1 {
+h1,
+h2 {
   margin: 0;
   color: $black;
   font-family: $josefin-sans;
+}
+
+h1 {
   font-size: $large;
+}
+
+h2 {
+  font-size: $medium;
 }
 
 // section & container
@@ -51,6 +59,10 @@ section {
 // flexbox
 .flex {
   display: flex;
+
+  &-fw-w {
+    flex-wrap: wrap;
+  }
 
   &-fd-c {
     flex-direction: column;
