@@ -1,0 +1,83 @@
+@import "variables";
+
+html {
+  height: 100%;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: $dark-gray;
+  font-family: $alata;
+  font-size: $small;
+}
+
+h1 {
+  margin: 0;
+  color: $black;
+  font-family: $josefin-sans;
+  font-size: $large;
+}
+
+// section & container
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 32px 120px;
+  width: 100%;
+  height: 100%;
+
+  @media only screen and (max-width: $desktop-width) {
+    padding: 48px 24px;
+  }
+}
+
+// flexbox
+.flex {
+  display: flex;
+
+  &-fd-c {
+    flex-direction: column;
+  }
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+}
+
+// visibility
+.hide-for-desktop {
+  @media only screen and (min-width: $desktop-width) {
+    display: none !important;
+  }
+}
+
+.hide-for-mobile {
+  @media only screen and (max-width: $desktop-width) {
+    display: none !important;
+  }
+}

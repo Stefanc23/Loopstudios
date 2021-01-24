@@ -1,0 +1,52 @@
+@import "variables";
+
+.hero {
+  position: relative;
+  &__image {
+    background-image: url("/images/desktop/image-hero.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: linear-gradient(to bottom right, $black, $black);
+      opacity: 0.3;
+    }
+  }
+  &__text {
+    position: absolute;
+    top: 30%;
+    left: 120px;
+    padding: 0 30px;
+    width: 650px;
+    height: 280px;
+    border: 2px solid $white;
+    h1 {
+      color: $white;
+      font-size: $very-large;
+    }
+
+    @media only screen and (max-width: $desktop-width) {
+      top: 30%;
+      left: 24px;
+      width: 80%;
+      height: 224px;
+    }
+
+    @media only screen and (max-width: $mobile-width) {
+      top: 30%;
+      left: 24px;
+      width: 315px;
+
+      h1 {
+        font-size: $large;
+      }
+    }
+  }
+}
