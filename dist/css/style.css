@@ -375,6 +375,7 @@ section {
 }
 
 .story {
+  margin: 10% 0;
   text-align: center;
 }
 
@@ -389,40 +390,45 @@ section {
   width: 100%;
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 650px) {
   .story__image {
     position: absolute;
-    top: 24px;
+    top: 0;
     left: 0;
-    width: 600px;
-    height: 400px;
+    width: 58.59%;
+    height: 85.1%;
   }
 }
 
 .story__text {
-  padding: 84px 60px;
   background-color: white;
 }
 
 .story__text h1 {
+  padding: 0 8%;
+  margin-top: 10%;
   color: black !important;
+  font-size: 3vw;
 }
 
-@media only screen and (min-width: 960px) {
+.story__text p {
+  line-height: 2;
+  font-size: 1.2vw;
+  margin: 5% 8%;
+}
+
+@media only screen and (min-width: 650px) {
   .story__text {
     position: absolute;
     right: 0;
-    bottom: 20px;
-    width: 560px;
-    height: 360px;
+    bottom: 0;
+    width: 54.69%;
+    height: 66.66%;
     text-align: left;
-  }
-  .story__text p {
-    line-height: 2;
   }
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 650px) {
   .story__text {
     padding: 48px 24px 0;
   }
@@ -430,12 +436,18 @@ section {
     font-size: 26px;
   }
   .story__text p {
+    margin-top: 24px;
     font-size: 15px;
+    line-height: 1.3;
   }
 }
 
 .creations {
-  height: 200vh;
+  height: 1200px;
+}
+
+.creations__header {
+  text-align: left;
 }
 
 @media only screen and (max-width: 960px) {
@@ -462,12 +474,6 @@ section {
   background-color: black;
 }
 
-@media only screen and (max-width: 960px) {
-  .creations__button {
-    margin: 0 25% 120px;
-  }
-}
-
 .creations__body {
   margin: 48px 0;
   width: 100%;
@@ -481,6 +487,7 @@ section {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 21%;
           flex: 1 0 21%;
+  text-align: left;
 }
 
 .creations__item:first-child, .creations__item:nth-child(5) {
@@ -569,7 +576,11 @@ section {
 
 @media only screen and (max-width: 960px) {
   .creations {
-    height: 300vh;
+    margin-top: 35%;
+    height: 1920px;
+  }
+  .creations .container {
+    text-align: center;
   }
 }
 

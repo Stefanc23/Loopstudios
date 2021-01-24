@@ -1,9 +1,10 @@
 @import "variables";
 
 .creations {
-  height: 200vh;
+  height: 1200px;
 
   &__header {
+    text-align: left;
     @media only screen and (max-width: $desktop-width) {
       h1 {
         width: 100%;
@@ -25,10 +26,6 @@
       color: $white;
       background-color: $black;
     }
-
-    @media only screen and (max-width: $desktop-width) {
-      margin: 0 25% 120px;
-    }
   }
 
   &__body {
@@ -42,6 +39,7 @@
     width: 100%;
     height: 400px;
     flex: 1 0 21%;
+    text-align: left;
 
     &:first-child,
     &:nth-child(5) {
@@ -126,6 +124,11 @@
   }
 
   @media only screen and (max-width: $desktop-width) {
-    height: 300vh;
+    margin-top: 35%;
+    height: 1920px;
+
+    .container {
+      text-align: center;
+    }
   }
 }

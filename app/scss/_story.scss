@@ -1,6 +1,7 @@
 @import "variables";
 
 .story {
+  margin: 10% 0;
   text-align: center;
 
   &__box {
@@ -13,44 +14,50 @@
   &__image {
     width: 100%;
 
-    @media only screen and (min-width: $desktop-width) {
+    @media only screen and (min-width: $mobile-width) {
       position: absolute;
-      top: 24px;
+      top: 0;
       left: 0;
-      width: 600px;
-      height: 400px;
+      width: 58.59%;
+      height: 85.1%;
     }
   }
 
   &__text {
-    padding: 84px 60px;
     background-color: $white;
 
     h1 {
+      padding: 0 8%;
+      margin-top: 10%;
       color: $black !important;
+      font-size: 3vw;
     }
 
-    @media only screen and (min-width: $desktop-width) {
+    p {
+      line-height: 2;
+      font-size: 1.2vw;
+      margin: 5% 8%;
+    }
+
+    @media only screen and (min-width: $mobile-width) {
       position: absolute;
       right: 0;
-      bottom: 20px;
-      width: 560px;
-      height: 360px;
+      bottom: 0;
+      width: 54.69%;
+      height: 66.66%;
       text-align: left;
-
-      p {
-        line-height: 2;
-      }
     }
 
-    @media only screen and (max-width: $desktop-width) {
+    @media only screen and (max-width: $mobile-width) {
       padding: 48px 24px 0;
 
       h1 {
         font-size: $medium;
       }
       p {
+        margin-top: 24px;
         font-size: $small;
+        line-height: 1.3;
       }
     }
   }
